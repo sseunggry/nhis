@@ -1,0 +1,15 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.32592C3 2.59421 3.60608 2 4.35241 2H12V23H4.35241C3.60608 23 3 22.4058 3 21.6741V3.32592ZM21 7V21.6741C21 22.4058 20.3939 23 19.6476 23H12V2H16L21 7Z" fill="url(#paint0_linear_2269_273516)"/>
+<path d="M17.7397 7C16.7796 7 16 6.22036 16 5.26031V2L21 7H17.7397Z" fill="#C7D1E0"/>
+<path d="M17.7504 15H6.24957C6.11173 15 6 15.2321 6 15.5185V16.4815C6 16.7679 6.11173 17 6.24957 17H17.7504C17.8883 17 18 16.7679 18 16.4815V15.5185C18 15.2321 17.8883 15 17.7504 15Z" fill="#C7D1E0"/>
+<path d="M17.7504 18H6.24957C6.11173 18 6 18.2321 6 18.5185V19.4815C6 19.7679 6.11173 20 6.24957 20H17.7504C17.8883 20 18 19.7679 18 19.4815V18.5185C18 18.2321 17.8883 18 17.7504 18Z" fill="#C7D1E0"/>
+<path d="M8.66406 7.5L9.49217 9.83127L10.4402 12.5001L12.0307 8.0259L13.5284 12.5001L15.3309 7.50158" stroke="#545772" stroke-width="1.6" stroke-linejoin="bevel"/>
+<path d="M7 10L9.50005 10" stroke="#545772" stroke-width="1.6" stroke-linejoin="bevel"/>
+<path d="M14.5 10H17.0001" stroke="#545772" stroke-width="1.6" stroke-linejoin="bevel"/>
+<defs>
+<linearGradient id="paint0_linear_2269_273516" x1="12" y1="2" x2="12" y2="23" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EAF2FF"/>
+<stop offset="1" stop-color="#CDDCF4"/>
+</linearGradient>
+</defs>
+</svg>
