@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>| 국민건강보험</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-size: 10px;
+
+				a{
+					font-size: inherit;
+				}
+				table{
+					width: 100%;
+				}
+			}
+            #file-wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 1rem;
+                margin: 0 auto;
+            }
+
+            .file-tit {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 100%;
+                margin-bottom: 2rem;
+                font-size: 3.5rem;
+            }
+
+            .guide-tbl {
+                overflow-x: auto;
+                width: 100%;
+            }
+
+            .guide-tbl tr:hover {
+                background-color: #f0f5fe;
+            }
+
+            .guide-tbl th {
+                background-color: #e4e4e4;
+            }
+
+            .guide-tbl th,
+            .guide-tbl td {
+                font-size: 1.6rem;
+                height: 4.8rem;
+                padding: 1.2rem 1rem;
+                border: 1px solid #d8d8d8;
+            }
+
+            .guide-tbl .file a {
+                color: #256ef4;
+                text-decoration: underline;
+            }
+
+            .guide-tbl tr td:first-child {
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="file-wrap">
+            <h1 class="file-tit">화면 목록</h1>
+            <div class="guide-tbl">
+                <table>
+                    <colgroup>
+                        <col style="width: 20%" />
+                        <col style="width: 20%" />
+                        <col style="width: 30%" />
+                        <col style="width: auto" />
+                        <col />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">1Depth</th>
+                            <th scope="col">2Depth</th>
+                            <th scope="col">File Link</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-data"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            const data = [
+                {
+                    category: "메인",
+                    dir: "",
+                    depth2: [
+						{ name: "메인", file: "wbhaaa01000m01", etc: "" }
+					],
+                },
+                {
+                    category: "policy",
+                    dir: "policy",
+                    depth2: [
+						{ name: "policy1", file: "wbhapa01000m01", etc: "" },
+						{ name: "policy2", file: "wbhapa01100m01", etc: "" }
+					],
+                },
+                {
+                    category: "minwon",
+                    dir: "minwon",
+                    depth2: [
+						{ name: "minwon1", file: "wbhaba01000m01", etc: "" },
+						{ name: "minwon2", file: "wbhaba01100m01-sample-01", etc: "" },
+						{ name: "minwon3", file: "wbhabb01500m01-step2", etc: "" },
+						{ name: "minwon4", file: "wbhabb01500m01", etc: "" },
+						{ name: "minwon5", file: "wbhabb01600m01", etc: "" },
+					],
+                },
+                {
+                    category: "etc",
+                    dir: "etc",
+                    depth2: [
+						{ name: "etc", file: "wbhaza03110m02", etc: "" }
+					],
+                },
+            ];
+
+            const createHtmlTable = (category, dir, subMenu, showCategory, showSubMenu) => {
+                dir = dir ? dir + "/" : "";
+                return `<tr>
+					<td>${showCategory ? category : ""}</td>
+					<td>${subMenu.name}</td>
+					<td class="file">
+						<a href="./${dir}${subMenu.file}.html" target="_blank">
+							${subMenu.file}.html
+						</a>
+					</td>
+					<td>${subMenu.etc || ""}</td>
+				</tr>`;
+            };
+            const createTable = () => {
+                const $tableData = document.querySelector(".table-data");
+                let html = [];
+
+                data.forEach((categoryItem) => {
+                    const { category, dir, depth2 } = categoryItem;
+                    let showCategory = true;
+
+                    depth2.forEach((subMenu) => {
+                        html.push(createHtmlTable(category, dir, subMenu, showCategory));
+                        showCategory = false;
+                    });
+                });
+                $tableData.innerHTML = html.join("");
+            };
+
+            (function () {
+                createTable();
+            })();
+        </script>
+    </body>
+</html>
