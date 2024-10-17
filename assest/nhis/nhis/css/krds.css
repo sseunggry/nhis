@@ -6083,7 +6083,7 @@ input[type=checkbox] {
     background-image: url(../img/icon/ico_like_20.svg);
   }
   .btn-txt.ico-share::before, .btn-txt.ico-share::after {
-    background-image: url(../img/icon/ico_share_20.svg);
+    background-image: url(../img/icon/icoshare_20.svg);
   }
   .btn-txt.ico-arr::after {
     background-image: url(../img/icon/ico_arr_20_right.svg);

@@ -5816,7 +5816,7 @@ table .help-text {
 .ico-certification-mark09 {
     width: 57px;
     height: 40px;
-    background: url("../../../nhis/_share/img/icon/mark02-img05.png") no-repeat
+    background: url("../../../nhis/share/img/icon/mark02-img05.png") no-repeat
 }
 
 .ico-health-checkup-01 {
@@ -21618,7 +21618,7 @@ body,
 
 .footer_navlink .certification_list>li>.mark03 {
     width: 57px;
-    background-image: url('../../../nhis/_share/img/icon/mark02-img05.png')
+    background-image: url('../../../nhis/share/img/icon/mark02-img05.png')
 }
 
 .footer_navlink .certification_list>li>.mark04 {
