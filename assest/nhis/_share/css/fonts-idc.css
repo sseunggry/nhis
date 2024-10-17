@@ -39,20 +39,20 @@
 @font-face {
     font-family: 'Pretendard';
     font-weight: 400;
-    src: url('../../../_common/ableu/css/fonts/Pretendard-Regular.subset.eot');
-    src: url('../../../_common/ableu/css/fonts/Pretendard-Regular.subset.eot?#iefix') format('embedded-opentype'),url('../../../_common/ableu/css/fonts/Pretendard-Regular.subset.woff2') format('woff2'),url('../../../_common/ableu/css/fonts/Pretendard-Regular.subset.woff') format('woff'),url('../../../_common/ableu/css/fonts/Pretendard-Regular.subset.ttf') format("truetype")
+    src: url('../../../common/ableu/css/fonts/Pretendard-Regular.subset.eot');
+    src: url('../../../common/ableu/css/fonts/Pretendard-Regular.subset.eot?#iefix') format('embedded-opentype'),url('../../../common/ableu/css/fonts/Pretendard-Regular.subset.woff2') format('woff2'),url('../../../common/ableu/css/fonts/Pretendard-Regular.subset.woff') format('woff'),url('../../../common/ableu/css/fonts/Pretendard-Regular.subset.ttf') format("truetype")
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 500;
-    src: url('../../../_common/ableu/css/fonts/Pretendard-Medium.subset.eot');
-    src: url('../../../_common/ableu/css/fonts/Pretendard-Medium.subset.eot?#iefix') format('embedded-opentype'),url('../../../_common/ableu/css/fonts/Pretendard-Medium.subset.woff2') format('woff2'),url('../../../_common/ableu/css/fonts/Pretendard-Medium.subset.woff') format('woff'),url('../../../_common/ableu/css/fonts/Pretendard-Medium.subset.ttf') format("truetype")
+    src: url('../../../common/ableu/css/fonts/Pretendard-Medium.subset.eot');
+    src: url('../../../common/ableu/css/fonts/Pretendard-Medium.subset.eot?#iefix') format('embedded-opentype'),url('../../../common/ableu/css/fonts/Pretendard-Medium.subset.woff2') format('woff2'),url('../../../common/ableu/css/fonts/Pretendard-Medium.subset.woff') format('woff'),url('../../../common/ableu/css/fonts/Pretendard-Medium.subset.ttf') format("truetype")
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 700;
-    src: url('../../../_common/ableu/css/fonts/Pretendard-Bold.subset.eot');
-    src: url('../../../_common/ableu/css/fonts/Pretendard-Bold.subset.eot?#iefix') format('embedded-opentype'),url('../../../_common/ableu/css/fonts/Pretendard-Bold.subset.woff2') format('woff2'),url('../../../_common/ableu/css/fonts/Pretendard-Bold.subset.woff') format('woff'),url('../../../_common/ableu/css/fonts/Pretendard-Bold.subset.ttf') format("truetype")
+    src: url('../../../common/ableu/css/fonts/Pretendard-Bold.subset.eot');
+    src: url('../../../common/ableu/css/fonts/Pretendard-Bold.subset.eot?#iefix') format('embedded-opentype'),url('../../../common/ableu/css/fonts/Pretendard-Bold.subset.woff2') format('woff2'),url('../../../common/ableu/css/fonts/Pretendard-Bold.subset.woff') format('woff'),url('../../../common/ableu/css/fonts/Pretendard-Bold.subset.ttf') format("truetype")
 }
