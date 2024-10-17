@@ -272,10 +272,10 @@ $(window).resize(function() {
 
 //임시
 $(document).ready(function(){
-	$('#wrap').before('<button type="button" class="btn xlg" id="btn-show">hide</button>');
+	// $('#wrap').before('<button type="button" class="btn xlg" id="btn-show" style="position: fixed; bottom: 40px; right: 40px;">hide</button>');
 
-	getAllStyle();
-	btnShowClick();
+	// getAllStyle();
+	// btnShowClick();
 });
 
 function btnShowClick() {
